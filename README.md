@@ -62,7 +62,7 @@ The analysis uses:
 
 Curtis, E. M. (2018). *Who Loses under Cap-and-Trade Programs? The Labor Market Effects of the NOx Budget Trading Program.* **The Review of Economics and Statistics, 100**(1), 151–166.
 
-This repository documents an **independent seminar replication and extension**, not the original author's research repository or an official replication package.
+This repository documents an **independent seminar replication and extension**, not the original author's research repository.
 
 The baseline research design and original findings are credited to Curtis (2018). The alternative-outcome, heterogeneity, and additional electricity-price exercises were undertaken as part of this seminar project.
 
