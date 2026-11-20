@@ -50,7 +50,7 @@ A price-weighted energy-intensity measure is constructed to investigate electric
 | `MEA2 code.do` | Heterogeneity across high- and low-energy-intensity industries |
 | `TCA code.do` | EIA electricity-price data preparation and price-channel analysis |
 
-## Data and Reproducibility
+## Data
 
 The analysis uses:
 
