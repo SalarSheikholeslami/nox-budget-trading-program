@@ -58,12 +58,6 @@ The analysis uses:
 - **Industry energy intensity:** Industry-level energy-use information incorporated in the original empirical framework.
 - **EIA Form 861:** State-year industrial electricity prices used in the project's extension.
 
-The scripts reference supporting datasets including `cbp_st_table2.dta`, `stfueldata09_figureO4.dta`, and an EIA Form 861 Excel workbook.
-
-**Reproducibility note:** The Stata scripts currently use local file paths and require external datasets. They have not yet been independently tested as a complete replication package.
-
-Some scripts require user-written Stata commands, including `carryforward`, `eststo` (from `estout`), and `outreg2`.
-
 ## Original Study and Attribution
 
 Curtis, E. M. (2018). *Who Loses under Cap-and-Trade Programs? The Labor Market Effects of the NOx Budget Trading Program.* **The Review of Economics and Statistics, 100**(1), 151–166.
