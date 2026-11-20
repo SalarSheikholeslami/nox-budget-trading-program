@@ -1,35 +1,80 @@
-Revisiting the Labor Market Effects of the NOx Budget Trading Program
-A Replication and Extension of Curtis (2018)
-Author: Salar Sheikholeslami
-Affiliation: Johannes Kepler University Linz
-Project: Seminar research project, Winter Semester 2025/26
-Supervisor: Prof. Ulrich Glogowsky
-Software: Stata
-Overview
-This project replicates and extends the empirical analysis in Curtis (2018), Who Loses under Cap-and-Trade Programs? The Labor Market Effects of the NOx Budget Trading Program. It examines how the U.S. NOx Budget Trading Program affected manufacturing employment, with particular attention to differences across industries in energy intensity and to the potential role of industrial electricity prices.
 
-The empirical framework uses triple differences (DDD), comparing employment outcomes across time, regulated and comparison states, and industries with different levels of energy intensity.
-Analyses
-1. Baseline replication and alternative outcome: Reproduces the main DDD framework and evaluates employment growth (annual changes in log employment) as an alternative to employment levels.
-2. Heterogeneity by energy intensity: Examines whether estimated employment effects are concentrated in high-energy-intensity manufacturing industries, using indicators for the top and bottom energy-intensity quartiles.
-3. Electricity-price channel: Incorporates additional state-year industrial electricity-price data from the U.S. Energy Information Administration (EIA-861) and constructs a price-weighted energy-intensity measure to explore the role of electricity costs.
-Main findings
-The baseline replication is consistent with Curtis (2018). In the extensions, employment-growth specifications do not show statistically significant short-run effects, while estimated employment-level reductions are more pronounced in the most energy-intensive industries. The electricity-price-weighted specifications also show a negative association between policy exposure and employment in several model specifications. These results are consistent with an electricity-cost mechanism, but the channel analysis should not be interpreted as definitive identification of a causal mediation effect.
-Code
-The current analysis is organised into three Stata scripts:
-- MEA1 code.do — alternative employment-growth outcome.
-- MEA2 code.do — heterogeneity by industrial energy intensity.
-- TCA code.do — industrial electricity-price analysis using EIA data.
-Before sharing the code as a reproducible research package, the scripts need to be standardised to use relative file paths and documented input-data locations.
-Data and reproducibility
-The research uses state-industry manufacturing employment data based on the County Business Patterns (CBP), industry energy-intensity measures, and additional state-year industrial electricity-price information from EIA Form 861. The supplied scripts also refer to supporting data files, including cbp_st_table2.dta, stfueldata09_figureO4.dta, and a source Excel workbook used to prepare the EIA electricity-price series.
+# Revisiting the Labor Market Effects of the NOx Budget Trading Program
 
-Reproducibility status: The supplied scripts are research code, not yet a standalone, one-click replication package. They currently contain local computer paths and require input data that are not included in this repository. Please consult the cited sources and confirm data redistribution permissions before adding any underlying datasets.
+**A Replication and Extension of Curtis (2018)**
 
-Some scripts use community-contributed Stata commands including carryforward, eststo (from estout), and outreg2. The Stata version and package versions have not yet been pinned or independently tested in a clean environment.
-Reference and attribution
-Curtis, E. M. (2018). Who Loses under Cap-and-Trade Programs? The Labor Market Effects of the NOx Budget Trading Program. The Review of Economics and Statistics, 100(1), 151–166.
+**Author:** Salar Sheikholeslami  
+**Institution:** Johannes Kepler University Linz (JKU), Austria  
+**Project:** Seminar Research Project | Winter Semester 2025/26  
+**Supervisor:** Prof. Ulrich Glogowsky  
+**Software:** Stata
 
-This is an independent seminar replication and extension, not the original Curtis (2018) article or an official replication archive. Original methods and findings should be attributed to Curtis (2018); the alternative outcome, energy-intensity heterogeneity exercise, and EIA-based electricity-price analysis are extensions undertaken for this seminar project.
-Usage and rights
-No open-source license is currently granted for the original materials in this repository. Third-party datasets, code, and other materials remain subject to their respective rights and terms. Public visibility does not by itself grant permission for unrestricted reuse.
+## Overview
+
+This seminar project replicates and extends the empirical analysis in Curtis (2018), *Who Loses under Cap-and-Trade Programs? The Labor Market Effects of the NOx Budget Trading Program*.
+
+It investigates the employment effects of the U.S. NOx Budget Trading Program (NBP), with a particular focus on manufacturing industries' energy intensity and the role of industrial electricity prices.
+
+The analysis builds on a **triple-differences (DDD)** design, comparing employment outcomes across time, regulated and comparison states, and industries with different levels of energy intensity.
+
+## Empirical Analyses
+
+The project includes three complementary exercises:
+
+### 1. Alternative Outcome: Employment Growth (MEA 1)
+
+Re-estimates the DDD specifications using annual changes in log employment instead of employment levels to examine short-run employment growth.
+
+### 2. Heterogeneity by Energy Intensity (MEA 2)
+
+Tests whether employment effects are concentrated in the most energy-intensive manufacturing industries, comparing industries in the upper and lower quartiles of the energy-intensity distribution.
+
+### 3. Electricity-Price Channel (TCA)
+
+Incorporates additional state-year industrial electricity prices from the U.S. Energy Information Administration (EIA Form 861).
+
+A price-weighted energy-intensity measure is constructed to investigate electricity costs as a potential mechanism underlying the policy's employment effects.
+
+## Main Findings
+
+- The replicated baseline results are consistent with the employment effects reported in Curtis (2018).
+- Alternative employment-growth specifications do not show statistically significant short-run treatment effects.
+- Employment-level effects are more pronounced among highly energy-intensive manufacturing industries.
+- Results using electricity-price-weighted energy intensity are consistent with an electricity-cost channel, although they do not establish a separately identified causal mediation effect.
+
+## Repository Contents
+
+| File | Description |
+|------|-------------|
+| `MEA1 code.do` | Alternative outcome: employment growth |
+| `MEA2 code.do` | Heterogeneity across high- and low-energy-intensity industries |
+| `TCA code.do` | EIA electricity-price data preparation and price-channel analysis |
+
+## Data and Reproducibility
+
+The analysis uses:
+
+- **County Business Patterns (CBP):** State-industry manufacturing employment data.
+- **Industry energy intensity:** Industry-level energy-use information incorporated in the original empirical framework.
+- **EIA Form 861:** State-year industrial electricity prices used in the project's extension.
+
+The scripts reference supporting datasets including `cbp_st_table2.dta`, `stfueldata09_figureO4.dta`, and an EIA Form 861 Excel workbook.
+
+**Reproducibility note:** The Stata scripts currently use local file paths and require external datasets. They have not yet been independently tested as a complete replication package.
+
+Some scripts require user-written Stata commands, including `carryforward`, `eststo` (from `estout`), and `outreg2`.
+
+## Original Study and Attribution
+
+Curtis, E. M. (2018). *Who Loses under Cap-and-Trade Programs? The Labor Market Effects of the NOx Budget Trading Program.* **The Review of Economics and Statistics, 100**(1), 151–166.
+
+This repository documents an **independent seminar replication and extension**, not the original author's research repository or an official replication package.
+
+The baseline research design and original findings are credited to Curtis (2018). The alternative-outcome, heterogeneity, and additional electricity-price exercises were undertaken as part of this seminar project.
+
+## Usage and Rights
+
+No open-source licence has been assigned to the original materials in this repository. Third-party code, datasets, and other content remain subject to their respective terms.
+
+Public availability does not grant unrestricted permission to reuse or redistribute these materials.
+
