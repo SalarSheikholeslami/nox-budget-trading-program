@@ -35,13 +35,6 @@ Incorporates additional state-year industrial electricity prices from the U.S. E
 
 A price-weighted energy-intensity measure is constructed to investigate electricity costs as a potential mechanism underlying the policy's employment effects.
 
-## Main Findings
-
-- The replicated baseline results are consistent with the employment effects reported in Curtis (2018).
-- Alternative employment-growth specifications do not show statistically significant short-run treatment effects.
-- Employment-level effects are more pronounced among highly energy-intensive manufacturing industries.
-- Results using electricity-price-weighted energy intensity are consistent with an electricity-cost channel, although they do not establish a separately identified causal mediation effect.
-
 ## Repository Contents
 
 | File | Description |
