@@ -1,5 +1,5 @@
 
-#  the Labor Market Effects of the NOx Budget Trading Program
+#  The Labor Market Effects of the NOx Budget Trading Program
 
 **A Replication and Extension of Curtis (2018)**
 
