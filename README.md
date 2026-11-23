@@ -7,7 +7,6 @@
 **Institution:** Johannes Kepler University Linz (JKU), Austria  
 **Project:** Seminar Research Project | Winter Semester 2025/26  
 **Supervisor:** Prof. Ulrich Glogowsky  
-**Software:** Stata
 
 ## Overview
 
